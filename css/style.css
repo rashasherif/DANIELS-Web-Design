@@ -1,0 +1,304 @@
+/* global css */
+:root{
+    --maincolor:#00111b ;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Montserrat", sans-serif;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/* Navbar*/
+.navbar-brand{
+    font-size: 18px;
+    font-weight: 800;
+}
+
+
+/* Home */
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) ,url(../images/bg.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+header h5{
+    font-size: 50px;
+    font-weight: 800;
+}
+header h1{
+    font-size: 60px;
+    font-weight: 200;
+}
+header h1 span{
+    font-size: 44px;
+    font-weight: 400;
+}
+.icons-social a span{
+    display: inline-block;
+    font-size: 14px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* About*/
+.mb-30{
+    margin-bottom: 30px;
+}
+
+.img-about img{
+
+    vertical-align: middle;
+}
+.hero .img-about{
+    position: relative;
+    padding: 0 0 0 30px;
+}
+.hero .img-about::after {
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 0px;
+    bottom: -30px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+
+.content-about .cont-title{
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.hero .content-about .cont-sub {
+    font-size: 14px;
+    font-weight: 400;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.hero .content-about p{
+    font-size: 15px;
+    font-weight: 400;
+    color: #748182;
+    line-height: 1.6;
+}
+
+
+.progress-bar{  
+    width: 100%;
+    flex-direction: row;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: #f7f7f7;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+}
+
+.progress-bar span{
+    font-weight: 500;
+    font-size: 13px;
+}
+
+
+/* servieses*/
+
+.bg-gray {
+    background: #f7f7f7;
+}
+.section-padding{
+    padding: 100px;
+}
+
+.head-sec{
+    margin-bottom: 80px;
+    text-align: center;
+}
+.head-sec h3 {
+    font-weight: 900;
+    font-size: 40px;
+    position: relative;
+    display: inline-block;
+    z-index: 4;
+}
+
+.head-sec h3:after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+.Services .row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.Services .row.item{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+
+.card-service{
+    box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+.service-ico .ico-circle{
+    width: 70px;
+    height: 70px;
+    background: #f4f4f4;
+    font-size: 30px;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+}
+.serv-content h6{
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.card-service:hover .service-ico .ico-circle{
+    background: black;
+    color: #f7f7f7;
+}
+
+
+.item .item-caption{
+
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background: rgba(255, 255, 255, 0.95);
+    opacity: 0;
+    transition: all 0.5s;
+    z-index: 2;
+    transform: translateY(10px);
+}
+
+.item:hover .item-caption{
+    opacity: 1;
+
+    transform: translateY(-15px);
+    transition: all 0.5s;
+
+}
+.icon-img-overlay span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+    color: #f7f7f7;
+}
+
+.icon-img-overlay span:hover{
+    background-color: #fff;
+    border:.5px solid black;
+    color: black;
+} 
+
+
+.client-item p{
+    word-spacing: 2px;
+    line-height: 1.6;
+    color: #748182;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: Poppins sans-serif;
+    margin: 0;
+}
+.client-item h6 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 30px 0 5px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.1;
+}
+
+
+.client-item span {
+    font-size: 12px;
+    font-weight: 600;
+    color: #888;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+
+.carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    cursor: hand;
+
+}
+
+.w-60{
+    width: 60%;
+}
+.w-90{
+    width: 90px;
+}
+.h-90{
+    height: 90px;
+}
+
+.count-user .item-count  h3{
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.team-sec .card-footer{
+    font-family: "Poppins", sans-serif;
+background-color: #5b5b5b;
+font-weight: 400;
+padding: 25px;
+color: #fff;
+text-align: center;
+}
+
+
+.contact .icon{
+    width: 60px;
+    height: 60px;
+    background: #f4f4f4;
+    font-size: 30px;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+}
+
+.contact .icon:hover{ 
+    background: black;
+    color: #f7f7f7;
+}
+
+
+footer {
+    background: #1c1c1c;
+    padding: 30px;
+}
+
+footer p {
+    font-size: 13px;
+    word-spacing: 2px;
+    color: 
+    #748182;
+
+    line-height: 1.6;
+}
